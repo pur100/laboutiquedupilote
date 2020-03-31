@@ -1,72 +1,102 @@
+// FONTS
+  @font-face {
+    font-family: 'nanum-regular';
+    src: url('{{ "NanumGothic-Regular.ttf" | asset_url }}');
+    font-weight: normal;
+    font-style: normal;
+  }
 
+//HEADER
 
-.nav {
-  li {
+  .nav {
+    li {
 
-    a {
-      text-transform: uppercase;
+      a {
+        text-transform: uppercase;
+      }
     }
   }
-}
 
-.logo--image {
-  position: absolute;
-  left: 43%;
-  margin-top: 10px;
-}
-
-.top_bar {
-  height: 80px;
-  padding: 0 !important;
-  border-bottom: solid white 1px;
-}
-
-
-  .right {
-    margin-top: 22px;
+  .logo--image {
+    position: absolute;
+    left: 43%;
+    margin-top: 10px;
   }
 
-  .left, .cart_container {
-    margin-top: 22px;
+  .top_bar {
+    height: 80px;
+    padding: 0 !important;
+    border-bottom: solid white 1px;
   }
 
-#search_icon {
-  height: 21px;
-  margin-top: 9px;
-}
 
+    .right {
+      margin-top: 22px;
+    }
 
-.search_dropdown {
- position: absolute;
-     width: 318px;
-     right: -4px;
-     top: 40px;
-     z-index: 1000;
-     background-color: black;
-     height: 90px;
+    .left, .cart_container {
+      margin-top: 22px;
+    }
 
-  .header_search_form {
-    width: 100% !important;
-
+  #search_icon {
+    height: 21px;
+    margin-top: 9px;
   }
-}
 
-#search_li {
-  position: relative;
-}
 
-.no_show {
-  display:none;
-}
+  .search_dropdown {
+   position: absolute;
+       width: 318px;
+       right: -4px;
+       top: 40px;
+       z-index: 1000;
+       background-color: black;
+       height: 90px;
 
-.flickity-page-dots .dot {
- height: 12px !important;
- width: 12px !important;
- margin: 15px !important;
- border-radius: 12px !important;
-}
+    .header_search_form {
+      width: 100% !important;
 
-.flickity-button-icon {
-  display: none;
-}
+    }
+  }
+
+  #search_li {
+    position: relative;
+  }
+
+
+// GENERAL RULES
+
+  .no_show {
+    display:none;
+  }
+
+// HP
+
+  // SLIDER
+
+    #homepage_slider-1585215550737 {
+
+      .flickity-page-dots .dot {
+       height: 12px !important;
+       width: 12px !important;
+       margin: 15px !important;
+       border-radius: 12px !important;
+      }
+
+      .flickity-button-icon {
+        display: none;
+      }
+
+
+    }
+
+  .divider_text {
+    span {
+      font-family: "nanum-regular" !important;
+      font-size: 3vw !important;
+      line-height: 4.1vw;
+    }
+  }
+
+
 
