@@ -161,7 +161,7 @@
 {% endif %}
 
 {% comment %}Main navigation{% endcomment %}
-<header class="{% if feature_image %}feature_image{% endif %} {% if section.settings.logo_home != nil %}secondary_logo--true{% endif %}">
+<header id="whole_header" style="" class="{% if feature_image %}feature_image{% endif %} {% if section.settings.logo_home != nil %}secondary_logo--true{% endif %}">
   <div class="header {% if feature_image and settings.header_background == false %}is-absolute {% endif %} header-fixed--{{ section.settings.fixed_header }} {% if settings.header_background %}header-background--solid{% endif %}">
     {% if section.settings.promo_text != blank %}
       <div class="promo_banner">
@@ -171,7 +171,7 @@
         <div class="promo_banner-close"></div>
       </div>
     {% endif %}
-    <div class="top_bar clearfix">
+    <div class="top_bar clearfix top_bar_fixed">
       {% if section.settings.social_icons_header %}
         {% include 'social-icons' %}
       {% endif %}
@@ -389,7 +389,7 @@
               </li>
               <li id="search_li">
                 <img id="search_icon" src="https://cdn.shopify.com/s/files/1/0346/5065/2808/files/kindpng_110727.png?v=1585649864" height="16px" alt="">
-                <div class="search_dropdown no_show">
+                <div class="search_dropdown">
                   <form action="{{ routes.search_url }}" class="header_search_form">
                     {% if settings.search_option != 'everything' %}
                       <input type="hidden" name="type" value="product" />
@@ -405,6 +405,7 @@
         </div>
       </div>
     </div>
+
 
     <div class="main_nav_wrapper">
       <div class="main_nav clearfix menu-position--{{ section.settings.menu_position }} logo-align--{{ section.settings.logo_alignment }} logo-position--{{ section.settings.logo_position }} search-enabled--{{ section.settings.search_enabled }}">
@@ -430,19 +431,19 @@
         {% endcapture %}
 
         {% if section.settings.logo_position == "left" or section.settings.menu_position == "block" %}
-          <div class="nav clearfix">
+          <div class="nav clearfix no_stick">
             <ul class="menu {{ section.settings.menu_alignment }} clearfix">
               {{ menu_left }}
               {{ menu_right }}
             </ul>
           </div>
         {% else %}
-          <div class="nav clearfix">
+          <div class="nav clearfix no_stick">
             <ul class="menu {{ section.settings.menu_alignment }} clearfix">
               {{ menu_left }}
             </ul>
           </div>
-          <div class="nav clearfix">
+          <div class="nav clearfix no_stick">
             <ul class="menu {% if section.settings.menu_alignment == 'align_left' %}align_right{% elsif section.settings.menu_alignment == 'align_right' %}align_left{% else %}{{ section.settings.menu_alignment }}{% endif %} clearfix menu-items--right">
               {{ menu_right }}
             </ul>
@@ -514,6 +515,18 @@
     }
   {% endif %}
 </style>
+
+<script>
+  $(document).ready(function() {
+    $("#search_li").click(function() {
+      console.log("script page")
+      $(".search_dropdown").toggleClass("no_show")
+    })
+
+  })
+
+
+</script>
 
 {% schema %}
 
