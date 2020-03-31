@@ -387,8 +387,21 @@
               <li>
                 <a href="{{ routes.account_url }}" class="icon-user" title="{{ 'layout.customer.my_account' | t }} {% if customer %}({{ customer.email }}){% endif %}"> <span>{% if customer %}{{ 'layout.customer.my_account' | t }}{% else %}{{ 'layout.customer.log_in' | t }}{% endif %}</span></a>
               </li>
+              <li id="search_li">
+                <img id="search_icon" src="https://cdn.shopify.com/s/files/1/0346/5065/2808/files/kindpng_110727.png?v=1585649864" height="16px" alt="">
+                <div class="search_dropdown no_show">
+                  <form action="{{ routes.search_url }}" class="header_search_form">
+                    {% if settings.search_option != 'everything' %}
+                      <input type="hidden" name="type" value="product" />
+                    {% endif %}
+                    <span class="icon-search search-submit"></span>
+                    <input type="text" name="q" placeholder="{{ 'general.search.title' | t: shop_name: shop.name }}" autocapitalize="off" autocomplete="off" autocorrect="off" class="search-terms" />
+                  </form>
+                </div>
+              </li>
             {% endif %}
           </ul>
+
         </div>
       </div>
     </div>
@@ -413,20 +426,7 @@
           {% else %}
             {% include 'menu' with section.settings.main_linklist2 %}
           {% endif %}
-          {% if section.settings.search_enabled %}
-            <li class="search_container" data-autocomplete-{{ settings.enable_autocomplete }}>
-              <form action="{{ routes.search_url }}" class="search_form">
-                {% if settings.search_option != 'everything' %}
-                  <input type="hidden" name="type" value="product" />
-                {% endif %}
-                <span class="icon-search search-submit"></span>
-                <input type="text" name="q" placeholder="{{ 'general.search.title' | t: shop_name: shop.name }}" value="{% if search and search.results.first.price %}{{ search.terms | replace: '*', '' }}{% endif %}" autocapitalize="off" autocomplete="off" autocorrect="off" />
-              </form>
-            </li>
-            <li class="search_link">
-              <a href="{{ routes.search_url }}" class="icon-search dropdown_link" title="{{ 'general.search.title' | t | escape }}" data-dropdown-rel="search"></a>
-            </li>
-          {% endif %}
+
         {% endcapture %}
 
         {% if section.settings.logo_position == "left" or section.settings.menu_position == "block" %}
@@ -448,19 +448,7 @@
             </ul>
           </div>
         {% endif %}
-        {% if section.settings.search_enabled %}
-          <div class="dropdown_container center" data-dropdown="search">
-            <div class="dropdown" data-autocomplete-{{ settings.enable_autocomplete }}>
-              <form action="{{ routes.search_url }}" class="header_search_form">
-                {% if settings.search_option != 'everything' %}
-                  <input type="hidden" name="type" value="product" />
-                {% endif %}
-                <span class="icon-search search-submit"></span>
-                <input type="text" name="q" placeholder="{{ 'general.search.title' | t: shop_name: shop.name }}" autocapitalize="off" autocomplete="off" autocorrect="off" class="search-terms" />
-              </form>
-            </div>
-          </div>
-        {% endif %}
+
         {% include 'sub-menu' with section.settings.main_linklist %}
         {% include 'sub-menu' with section.settings.main_linklist2 %}
       </div>
