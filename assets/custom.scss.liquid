@@ -6,6 +6,17 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'nanum-bold';
+    src: url('{{ "NanumGothic-Bold.ttf" | asset_url }}');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  h2 {
+    font-family: 'nanum-bold' !important;
+  }
+
 //HEADER
 
   .nav {
@@ -147,7 +158,4 @@
       position: relative;
     }
 
-    .featured-promotions .feature-section.title-overlay-true .title {
-        transition: all 0s linear;
-        color: black;
-    }
+
