@@ -4361,7 +4361,7 @@
           "main_linklist": "produits",
           "main_linklist2": "",
           "vertical_menu": false,
-          "search_enabled": false,
+          "search_enabled": true,
           "fixed_header": true,
           "logo_position": "center",
           "logo_alignment": "center",
@@ -4828,7 +4828,7 @@
       "1585214968058": {
         "type": "custom-html",
         "settings": {
-          "custom_html": "<div style=\"text-align: center;\"><span size=\"7\" style=\"font-size: xx-large; color: #000000;\">Boutique aéronautique, spécialiste et leader en France dans l'aviation<\/span><\/div>"
+          "custom_html": "<div class=\"divider_text\" style=\"text-align: center;\"><span size=\"7\" style=\"font-size: xx-large; color: #000000;\">Boutique aéronautique, spécialiste et leader en France dans l'aviation<\/span><\/div>"
         }
       },
       "1585215550737": {
@@ -4842,7 +4842,7 @@
               "title": "Boutique aéronautique, spécialiste et leader en France dans l'aviation",
               "subtitle": "",
               "caption_background": false,
-              "caption_background_transparency": false,
+              "caption_background_transparency": true,
               "button1": "Découvrir la collection",
               "button1_link": "#",
               "button1_highlight": false,
@@ -4978,8 +4978,9 @@
         "settings": {
           "featured_promos_grid": false,
           "promo_text_on_image_enabled": true,
+          "style_b": false,
           "featured_promos_per_row": 2,
-          "featured_links_animation": "fadeInDown",
+          "featured_links_animation": "fadeInUp",
           "feature_style": "square"
         }
       },
@@ -5036,6 +5037,7 @@
         "settings": {
           "featured_promos_grid": false,
           "promo_text_on_image_enabled": true,
+          "style_b": true,
           "featured_promos_per_row": 4,
           "featured_links_animation": "fadeInDown",
           "feature_style": "square"
@@ -5350,6 +5352,80 @@
         "settings": {
           "custom_html": "<p style=\"text-align: right;\"><span style=\"text-decoration: underline;\"><span style=\"color: #000000;\"><a href=\"https:\/\/laboutiquedupilote.myshopify.com\/collections\/all\" title=\"tous les produits\" style=\"color: #000000; text-decoration: underline;\">Voir plus de produits<\/a><\/span><\/span><\/p>"
         }
+      },
+      "1585664219342": {
+        "type": "logo-slider",
+        "blocks": {
+          "1585664219342-0": {
+            "type": "logo_image",
+            "settings": {
+              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
+              "link": ""
+            }
+          },
+          "1585664219342-1": {
+            "type": "logo_image",
+            "settings": {
+              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
+              "link": ""
+            }
+          },
+          "1585664219342-2": {
+            "type": "logo_image",
+            "settings": {
+              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
+              "link": ""
+            }
+          },
+          "1585664219342-3": {
+            "type": "logo_image",
+            "settings": {
+              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
+              "link": ""
+            }
+          },
+          "1585664340289": {
+            "type": "logo_image",
+            "settings": {
+              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
+              "link": ""
+            }
+          },
+          "1585664344278": {
+            "type": "logo_image",
+            "settings": {
+              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
+              "link": ""
+            }
+          },
+          "1585664346345": {
+            "type": "logo_image",
+            "settings": {
+              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
+              "link": ""
+            }
+          },
+          "1585664349335": {
+            "type": "logo_image",
+            "settings": {
+              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1585664219342-0",
+          "1585664219342-1",
+          "1585664219342-2",
+          "1585664219342-3",
+          "1585664340289",
+          "1585664344278",
+          "1585664346345",
+          "1585664349335"
+        ],
+        "settings": {
+          "title": ""
+        }
       }
     },
     "content_for_index": [
@@ -5376,7 +5452,8 @@
       "1585221519254",
       "1585236523444",
       "1585221830918",
-      "1585221981000"
+      "1585221981000",
+      "1585664219342"
     ]
   }
 }
