@@ -138,8 +138,9 @@
           {% if section.settings.product_description_position == "top" %}
             {% if product.description != blank %}
               <div class="description">
-                {{ product.description | split: '<!-- split -->' | first }}
+                {{ product.description | split: 'separator' | first }}
               </div>
+
             {% endif %}
           {% endif %}
 
@@ -150,9 +151,15 @@
 
           {% if section.settings.product_description_position == "bottom" %}
             {% if product.description != blank %}
-              <div class="description bottom">
-                {{ product.description | split: '<!-- split -->' | first }}
+              <div class="description top dec_showed">
+                {{ product.description | split: 'separator' | first }}
               </div>
+              <p class="voirplus">Voir plus ...</p>
+              <div class="description bottom no_show desc_hidden">
+                {{ product.description | split: 'separator' | last }}
+              </div>
+              <p class="voirmoins no_show">Voir moins ...</p>
+
             {% endif %}
           {% endif %}
 
@@ -208,11 +215,13 @@
         </div>
       </div>
 
+
+
       {% if product.description contains "<!-- split -->"  %}
         <br class="clear" />
         <div class="section clearfix">
           <div class="description">
-            {{ product.description | split: '<!-- split -->' | last }}
+            {{ product.description | split: 'separator' | last }}
           </div>
         </div>
       {% endif %}
@@ -240,6 +249,8 @@
           </div>
         </div>
       </div>
+
+
 
       {% if section.settings.display_recently_viewed %}
         {% include 'include-recently-viewed' %}

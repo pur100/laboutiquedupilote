@@ -71,6 +71,7 @@
         </script>
 
         <div class="eight columns breadcrumb_text medium-down--one-whole">
+
           <a href="{{ shop.url }}" title="{{ shop.name | escape }}">
             <span>{{ 'general.breadcrumbs.home' | t }}</span>
           </a>
@@ -102,7 +103,7 @@
           <h1>{{ collection.title }}</h1>
         </div>
       {% endif %}
-      <div class="eight columns section_select medium-down--one-whole">
+      <div class="eight columns section_select medium-down--one-whole ">
         {% if collection.handle != blank and collection.products_count > 0 %}
           {% if section.settings.collection_tags %}
             {% for tag in collection.all_tags %}
@@ -149,7 +150,7 @@
 
     {% if sidebar %}
       {% include 'sidebar' %}
-      <div class="twelve columns medium-down--one-whole">
+      <div class="twelve columns medium-down--one-whole collection_container">
     {% else %}
       <div class="sixteen columns">
     {% endif %}
@@ -175,6 +176,7 @@
 
     </div>
   {% endpaginate %}
+
 
 </div>
 

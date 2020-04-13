@@ -4807,10 +4807,10 @@
           "video_looping": false,
           "enable_shopify_product_badges": false,
           "review_position": "next_to_gallery",
-          "display_recently_viewed": false,
+          "display_recently_viewed": true,
           "rv_title": "Produits consultés",
-          "rv_products_style": "slider",
-          "rv_max_display": 4,
+          "rv_products_style": "grid",
+          "rv_max_display": 3,
           "rv_per": 4,
           "toggle": false
         }
@@ -5137,48 +5137,6 @@
           "mobile_text_color": ""
         }
       },
-      "1585221375465": {
-        "type": "logo-bar",
-        "blocks": {
-          "1585221375465-0": {
-            "type": "logo_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/image_2.png",
-              "link": ""
-            }
-          },
-          "1585221375465-1": {
-            "type": "logo_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/image_2_8739f768-ae6f-43f5-bd05-720e59cf4cf0.png",
-              "link": ""
-            }
-          },
-          "1585221375465-2": {
-            "type": "logo_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/image_2_dde162e5-68ed-43fc-9598-269b3f4cceb6.png",
-              "link": ""
-            }
-          },
-          "1585221375465-3": {
-            "type": "logo_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/image_2_9fbc073a-5f6c-4083-95cb-6a801c346292.png",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "1585221375465-0",
-          "1585221375465-1",
-          "1585221375465-2",
-          "1585221375465-3"
-        ],
-        "settings": {
-          "title": ""
-        }
-      },
       "1585221519254": {
         "type": "featured-collection",
         "settings": {
@@ -5411,6 +5369,41 @@
               "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
               "link": ""
             }
+          },
+          "1586514241321": {
+            "type": "logo_image",
+            "settings": {
+              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
+              "link": ""
+            }
+          },
+          "1586514254169": {
+            "type": "logo_image",
+            "settings": {
+              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
+              "link": ""
+            }
+          },
+          "1586514257085": {
+            "type": "logo_image",
+            "settings": {
+              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
+              "link": ""
+            }
+          },
+          "1586514259673": {
+            "type": "logo_image",
+            "settings": {
+              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
+              "link": ""
+            }
+          },
+          "1586514263619": {
+            "type": "logo_image",
+            "settings": {
+              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
+              "link": ""
+            }
           }
         },
         "block_order": [
@@ -5421,10 +5414,65 @@
           "1585664340289",
           "1585664344278",
           "1585664346345",
-          "1585664349335"
+          "1585664349335",
+          "1586514241321",
+          "1586514254169",
+          "1586514257085",
+          "1586514259673",
+          "1586514263619"
         ],
         "settings": {
           "title": ""
+        }
+      },
+      "1586515979325": {
+        "type": "logo-slider2",
+        "blocks": {
+          "1586517142103": {
+            "type": "Text",
+            "settings": {
+              "directions": "<b>Aéroport de Toussus-le-Noble<\/b>\n<br> \nTour de Contrôle \n<br>\n78117 Toussus le Noble - France",
+              "horaires": "<b>Mardi au vendredi<\/b>\n<br>\n10:00 - 13:30 \/ 14:30 - 17:45\n<br>\n<b>Samedi<\/b>\n10:00 - 18:00\n<br>",
+              "contact": "01 39 56 25 60"
+            }
+          },
+          "1586517196017": {
+            "type": "Text",
+            "settings": {
+              "directions": "<b>Aéroport de Toussus-le-Noble<\/b>\n<br> \nTour de Contrôle \n<br>\n78117 Toussus le Noble - France",
+              "horaires": "<b>Mardi au vendredi<\/b>\n<br>\n10:00 - 13:30 \/ 14:30 - 17:45\n<br>\n<b>Samedi<\/b>\n10:00 - 18:00\n<br>",
+              "contact": "01 39 56 25 60"
+            }
+          },
+          "1586519346121": {
+            "type": "Text",
+            "settings": {
+              "directions": "<b>Aéroport de Toussus-le-Noble<\/b>\n<br> \nTour de Contrôle \n<br>\n78117 Toussus le Noble - France",
+              "horaires": "<b>Mardi au vendredi<\/b>\n<br>\n10:00 - 13:30 \/ 14:30 - 17:45\n<br>\n<b>Samedi<\/b>\n10:00 - 18:00\n<br>",
+              "contact": "01 39 56 25 60"
+            }
+          },
+          "1586525058144": {
+            "type": "Text",
+            "settings": {
+              "directions": "<b>Aéroport de Toussus-le-Noble<\/b>\n<br> \nTour de Contrôle \n<br>\n78117 Toussus le Noble - France",
+              "horaires": "<b>Mardi au vendredi<\/b>\n<br>\n10:00 - 13:30 \/ 14:30 - 17:45\n<br>\n<b>Samedi<\/b>\n10:00 - 18:00\n<br>",
+              "contact": "01 39 56 25 60"
+            }
+          }
+        },
+        "block_order": [
+          "1586517142103",
+          "1586517196017",
+          "1586519346121",
+          "1586525058144"
+        ],
+        "settings": {
+          "title": "Boutiques",
+          "tel": "01 39 56 29 70",
+          "hours": "9:00 - 13:00 \/ 14:00 - 18:00",
+          "addressa": "Aéroport - Batiment 101 - Zone Est",
+          "addressb": "78117 Toussus le Noble - France"
         }
       }
     },
@@ -5446,14 +5494,14 @@
       "1585220867173",
       "1585236756752",
       "1585221075926",
-      "1585221375465",
       "1585221576593",
       "1585221541899",
       "1585221519254",
       "1585236523444",
       "1585221830918",
+      "1585664219342",
       "1585221981000",
-      "1585664219342"
+      "1586515979325"
     ]
   }
 }
