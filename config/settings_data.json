@@ -4035,7 +4035,7 @@
     "collection_height": 200,
     "thumbnail_hover_enabled": false,
     "display_vendor": false,
-    "collection_secondary_image": true,
+    "collection_secondary_image": false,
     "sale_banner_enabled": true,
     "collection_swatches": false,
     "mobile_products_per_row": "1",
@@ -4789,7 +4789,7 @@
           "activate_zoom": false,
           "slideshow_speed": 0,
           "slideshow_animation": "slide",
-          "thumbnail_position": "bottom-slider",
+          "thumbnail_position": "right",
           "enable_thumbnail_slider": true,
           "display_vendor": true,
           "product_breadcrumb": true,
@@ -4802,8 +4802,8 @@
           "display_savings": true,
           "show_payment_button": false,
           "product_images_position": "left",
-          "set_product_height": false,
-          "product_height": 500,
+          "set_product_height": true,
+          "product_height": 440,
           "video_looping": false,
           "enable_shopify_product_badges": false,
           "review_position": "next_to_gallery",
@@ -4819,10 +4819,10 @@
         "type": "product-recommendations",
         "settings": {
           "show_product_recommendations": true,
-          "product_recommendations_style": "slider",
+          "product_recommendations_style": "grid",
           "product_recommendations_heading": "Vous devriez aimer...",
           "products_per_row": 3,
-          "recommended_products_limit": 4
+          "recommended_products_limit": 3
         }
       },
       "1585214968058": {
@@ -4957,7 +4957,7 @@
               "link": "#",
               "title": "Carnets de vol",
               "text": "",
-              "button_label": "Découvrir"
+              "button_label": "Découvrir la collection"
             }
           },
           "1585217780606-1": {
@@ -5341,85 +5341,13 @@
               "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
               "link": ""
             }
-          },
-          "1585664340289": {
-            "type": "logo_image",
-            "settings": {
-              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
-              "link": ""
-            }
-          },
-          "1585664344278": {
-            "type": "logo_image",
-            "settings": {
-              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
-              "link": ""
-            }
-          },
-          "1585664346345": {
-            "type": "logo_image",
-            "settings": {
-              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
-              "link": ""
-            }
-          },
-          "1585664349335": {
-            "type": "logo_image",
-            "settings": {
-              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
-              "link": ""
-            }
-          },
-          "1586514241321": {
-            "type": "logo_image",
-            "settings": {
-              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
-              "link": ""
-            }
-          },
-          "1586514254169": {
-            "type": "logo_image",
-            "settings": {
-              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
-              "link": ""
-            }
-          },
-          "1586514257085": {
-            "type": "logo_image",
-            "settings": {
-              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
-              "link": ""
-            }
-          },
-          "1586514259673": {
-            "type": "logo_image",
-            "settings": {
-              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
-              "link": ""
-            }
-          },
-          "1586514263619": {
-            "type": "logo_image",
-            "settings": {
-              "logo_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/5065\/2808\/files\/image_2.png?v=1585221447",
-              "link": ""
-            }
           }
         },
         "block_order": [
           "1585664219342-0",
           "1585664219342-1",
           "1585664219342-2",
-          "1585664219342-3",
-          "1585664340289",
-          "1585664344278",
-          "1585664346345",
-          "1585664349335",
-          "1586514241321",
-          "1586514254169",
-          "1586514257085",
-          "1586514259673",
-          "1586514263619"
+          "1585664219342-3"
         ],
         "settings": {
           "title": ""
@@ -5474,6 +5402,16 @@
           "addressa": "Aéroport - Batiment 101 - Zone Est",
           "addressb": "78117 Toussus le Noble - France"
         }
+      },
+      "logo-slider2": {
+        "type": "logo-slider2",
+        "settings": {
+          "title": "Logo list",
+          "tel": "01 39 56 29 70",
+          "hours": "01 39 56 29 70",
+          "addressa": "01 39 56 29 70",
+          "addressb": "01 39 56 29 70"
+        }
       }
     },
     "content_for_index": [
@@ -5494,12 +5432,12 @@
       "1585220867173",
       "1585236756752",
       "1585221075926",
+      "1585664219342",
       "1585221576593",
       "1585221541899",
       "1585221519254",
       "1585236523444",
       "1585221830918",
-      "1585664219342",
       "1585221981000",
       "1586515979325"
     ]
