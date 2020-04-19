@@ -13,8 +13,14 @@
     font-style: normal;
   }
 
+  h1 {
+    letter-spacing: 0;
+    font-family: 'nanum-bold' !important;
+  }
+
   h2 {
     font-family: 'nanum-bold' !important;
+    letter-spacing: 0;
 
   }
 
@@ -176,6 +182,7 @@
        width: 12px !important;
        margin: 15px !important;
        border-radius: 12px !important;
+       background: #fecb2f;
       }
 
       .flickity-button-icon {
@@ -545,6 +552,11 @@
 // MOBILE
 
 @media (max-width: 798px) {
+  html {
+    width: 102% !important;
+  }
+
+
   .desktop {
     display: none !important;
   }
@@ -605,10 +617,114 @@
       height: 300px !important;
     }
 
-    // img {
-    //   height: 60px !important;
-    //   max-height: 70% !important;
-    // }
+  }
+
+  .clearfix {
+    p {
+      text-align: center !important;
+    }
+  }
+
+  #banner-1585221075926 {
+
+    .caption-content {
+      .headline {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+
+    img {
+      min-height: 500px;
+    }
+  }
+
+  #banner-1585220562420 {
+    img {
+      height: 200px !important;
+    }
+
+    .headline {
+      font-weight: bolder;
+    }
+
+    .subtitle {
+      p {
+        font-size: 16px;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 23px;
+      }
+    }
+  }
+
+  .carousel_custom .flickity-page-dots {
+      bottom: 60px !important;
+  }
+
+  .carousel_custom {
+      width: 100% !important;
+  }
+
+  #section-1586515979325 {
+
+    margin-left: 12px !important;
+
+    .main_boutique_container {
+      flex-direction: column;
+
+      .icon {
+        height: 60px;
+        margin: 0 auto;
+        img {
+          height: 30px;
+        }
+
+      }
+
+      .phone {
+        width: 100%;
+        flex-direction: column;
+        margin: 10px;
+        height: auto;
+        padding: 10px;
+
+      }
+      .hours_and_directions {
+        margin: 10px;
+        height: auto;
+        padding: 10px;
+        width: 100%;
+        flex-direction: column;
+        .hours_details {
+          text-align: center !important;
+          .hours {
+            width: 60%;
+            margin: 0 auto;
+          }
+        }
+
+      }
+    }
+
+    .boutiques_container {
+      flex-direction: column;
+
+      .boutique_block {
+        width: 90%;
+        margin-left: 17px;
+      }
+    }
+
   }
 
 }
